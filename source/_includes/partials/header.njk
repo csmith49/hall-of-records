@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="logo">
+        <a href="/">{{ meta.logotype }}</a>
+    </div>
+
+    <nav class="navbar">
+    {%- for entry in navigation.navbar -%}
+        <a class="navbar-item" href="{{ entry.url }}">
+            {{ entry.name | lower }}
+        </a>
+    {%- endfor -%}
+    </nav>
+</div>

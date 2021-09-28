@@ -1,0 +1,10 @@
+<a href="{{ record.url }}" class="record-card">
+    <div class="content no-wrap">
+        <div class="no-wrap title">{{ record.data.title }}</div>
+        <div class="no-wrap author">by {{ record.data.author | lower }}</div>
+        <div class="no-wrap quote">{{ record.data.content | safe }}</div>
+    </div>
+    <div class="hidden">
+        <p>↪</p>
+    </div>
+</a>

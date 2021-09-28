@@ -1,0 +1,8 @@
+{
+    "navbar" : [
+        {
+            "name" : "about",
+            "url" : "/about"
+        }
+    ]
+}

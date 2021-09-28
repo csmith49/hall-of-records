@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{% block main %}
+
+<div id="content">
+    {{ content | safe }}
+</div>
+
+<ul class="card-list">{%- for record in collections.records -%}
+    <li class="card">
+        {% include "partials/records/card.njk" %}
+    </li>
+{%- else -%}
+    <li><p>No records yet.</p></li>
+{%- endfor -%}
+</ul>
+
+<a id="submit-button" class="button" href="mailto:{{ meta.email }}">Submit</a>
+
+{% endblock %}

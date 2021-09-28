@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <html lang="en-US">
+
+        <meta name="author" content="{{ meta.author }}">
+
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/fonts.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+
+        <title>Hall of Records</title>
+    </head>
+
+    <body>
+        {# header #}
+        {% include "partials/header.njk" %}
+
+        {# hr separating header from content #}
+        <hr>
+
+        {# main content #}
+        <main>
+        {% block main %}
+
+        {% endblock %}
+        </main>
+
+        {# footer #}
+        {% include "partials/footer.njk" %}
+    </body>
+</html>

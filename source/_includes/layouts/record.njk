@@ -1,0 +1,14 @@
+{% extends "base.njk" %}
+
+{% block main %}
+
+<div class="record-header">
+    <div class="title">{{ title }}</div>
+    <div class="author">by {{ author | lower }}</div>
+</div>
+
+{{ content | safe }}
+
+<a id="return-button" class="button" href="/">↩</a>
+
+{% endblock %}
